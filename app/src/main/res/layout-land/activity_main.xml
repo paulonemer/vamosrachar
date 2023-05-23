@@ -8,30 +8,17 @@
     style="@style/background">
 
 
-    <Button
-        android:id="@+id/rachar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/box_rachar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preco"
-        app:layout_constraintVertical_bias="0.293" />
-
     <EditText
         android:id="@+id/pessoas"
         style="@style/textocor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/app_pessoas"
+        android:text="Pessoas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valor" />
 
@@ -40,58 +27,70 @@
         style="@style/textocor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/app_valor"
+        android:text="Preço"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pessoas" />
 
     <TextView
         android:id="@+id/valor"
+        style="@style/textocor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$0,00"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        style="@style/textocor"/>
+        app:layout_constraintVertical_bias="0.086" />
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rachar">
+        app:layout_constraintTop_toBottomOf="@+id/preco">
 
         <Button
             android:id="@+id/compartilhar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="111dp"
-            android:text="@string/box_compartilhar"
+            android:text="compartilhatr"
             app:layout_constraintBottom_toBottomOf="@+id/falar"
-            app:layout_constraintEnd_toStartOf="@+id/falar"
+            app:layout_constraintEnd_toStartOf="@+id/rachar"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/falar" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/falar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/box_falar"
+            android:text="Falar"
+            app:layout_constraintBottom_toBottomOf="@+id/rachar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/share"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintStart_toEndOf="@+id/rachar"
+            app:layout_constraintTop_toTopOf="@+id/rachar" />
+
+        <Button
+            android:id="@+id/rachar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rachar"
+            app:layout_constraintBottom_toBottomOf="@+id/compartilhar"
+            app:layout_constraintEnd_toStartOf="@+id/falar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/compartilhar"
+            app:layout_constraintTop_toTopOf="@+id/compartilhar"
+            app:layout_constraintVertical_bias="0.5" />
     </android.support.constraint.ConstraintLayout>
 
 

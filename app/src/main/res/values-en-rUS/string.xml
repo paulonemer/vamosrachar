@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vamosrachar</string>
+    <string name="box_rachar">divide</string>
+    <string name="box_compartilhar">share</string>
+    <string name="box_falar">speak</string>
+    <string name="app_pessoas">people</string>
+    <string name="app_valor">value</string>
+
+</resources>

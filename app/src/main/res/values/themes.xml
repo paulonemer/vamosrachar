@@ -9,4 +9,13 @@
         <item name="windowNoTitle">true</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="background">
+        <item name="android:background">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="textocor">
+        <item name="android:textColor">@color/dark</item>
+    </style>
 </resources>

@@ -1,3 +1,9 @@
 <resources>
+
     <string name="app_name">vamosrachar</string>
+    <string name="box_rachar">Rachar</string>
+    <string name="box_compartilhar">Compartilhar</string>
+    <string name="box_falar">falar</string>
+    <string name="app_pessoas">Pessoas</string>
+    <string name="app_valor">valor</string>
 </resources>
